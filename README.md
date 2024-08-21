@@ -18,10 +18,14 @@ El script realiza las siguientes operaciones:
 
 El script acepta dos opciones: `-e` para encriptar y `-d` para desencriptar. A continuación se detallan los pasos para utilizar el script:
 
+- Descargue el archivo `secfold.sh`
+- De permisos de ejecución con `chmod +x secfold.sh`
+- Siga las instrucciones siguientes.
+
 ### **Encriptar un Directorio**
 
 ```bash
-./script.sh -e
+./secfold.sh -e
 ```
 
 1. Se te pedirá que ingreses la ruta del directorio que deseas encriptar.
@@ -31,7 +35,7 @@ El script acepta dos opciones: `-e` para encriptar y `-d` para desencriptar. A c
 ### **Desencriptar un Archivo Encriptado**
 
 ```bash
-./script.sh -d
+./secfold.sh -d
 ```
 
 1. Se te pedirá que ingreses la ruta del archivo encriptado que deseas desencriptar.
@@ -43,7 +47,7 @@ El script acepta dos opciones: `-e` para encriptar y `-d` para desencriptar. A c
 ### **Encriptar un Directorio**
 
 ```bash
-./script.sh -e
+./secfold.sh -e
 Ingrese la ruta del directorio: /ruta/a/directorio
 Ingrese la clave para encriptar: 
 ```
@@ -51,13 +55,13 @@ Ingrese la clave para encriptar:
 ### **Desencriptar un Archivo**
 
 ```bash
-./script.sh -d
+./secfold.sh -d
 Ingrese la ruta del directorio encriptado: /ruta/a/directorio.tar.gz.gpg
 Ingrese la clave para desencriptar: 
 ```
 
 ## **Notas**
-- Puedes usar rutas relativas con `./directorio`.
+- Puedes usar rutas relativas con `./directorio`, siempre y cuando el script se encuentre en un directorio superior al actual.
 - Asegúrate de tener `gpg` instalado en tu sistema para encriptar y desencriptar archivos.
 - El script elimina el directorio original después de encriptarlo. Asegúrate de que tienes una copia de seguridad si es necesario.
 - La clave de encriptación debe ser guardada en un lugar seguro y no debe compartirse con personas no autorizadas.
