@@ -52,6 +52,9 @@ Ingrese la ruta del directorio: /ruta/a/directorio
 Ingrese la clave para encriptar: 
 ```
 
+![](/images/ima1.png)
+
+
 ### **Desencriptar un Archivo**
 
 ```bash
@@ -60,11 +63,15 @@ Ingrese la ruta del directorio encriptado: /ruta/a/directorio.tar.gz.gpg
 Ingrese la clave para desencriptar: 
 ```
 
+![](/images/ima2.png)
+
 ## **Notas**
 - Puedes usar rutas relativas con `./directorio`, siempre y cuando el script se encuentre en un directorio superior al actual.
 - Asegúrate de tener `gpg` instalado en tu sistema para encriptar y desencriptar archivos.
 - El script elimina el directorio original después de encriptarlo. Asegúrate de que tienes una copia de seguridad si es necesario.
 - La clave de encriptación debe ser guardada en un lugar seguro y no debe compartirse con personas no autorizadas.
+
+![](/images/ima3.png)
 
 ## **Contribuciones**
 
